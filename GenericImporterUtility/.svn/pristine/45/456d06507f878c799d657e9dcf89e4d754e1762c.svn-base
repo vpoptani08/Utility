@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<arsystem_xml_report>
+  <xform id="CISM_Bas:Ticket" xmlns="http://www.w3.org/2000/xforms">
+    <model>
+      <group name="field-info" minOccurs="1" maxOccurs="1">
+        <group name="field" minOccurs="1" maxOccurs="*">
+          <string name="name" />
+          <number name="id" long="true" />
+          <string name="type" range="closed">
+            <value>CHAR</value>
+            <value>TIME</value>
+            <value>DECIMAL</value>
+            <value>REAL</value>
+            <value>INT</value>
+            <value>ENUM</value>
+            <value>ATTACH</value>
+            <value>DIARY</value>
+            <value>TIMEOFDAY</value>
+            <value>DATE</value>
+            <value>CURRENCY</value>
+            <value>NULL</value>
+          </string>
+        </group>
+      </group>
+      <group name="entry" minOccurs="1" maxOccurs="*">
+        <group name="field_value" minOccurs="1" maxOccurs="*">
+          <string name="value" maxOccurs="*" />
+          <group name="status_history" maxOccurs="*">
+            <string name="date" maxOccurs="*" />
+            <string name="user" maxOccurs="*" />
+          </group>
+          <group name="currency" maxOccurs="*">
+            <string name="currency_value" maxOccurs="*" />
+            <string name="currency_type" maxOccurs="*" />
+            <string name="currency_date" maxOccurs="*" />
+            <string name="currency_functional" maxOccurs="*" />
+          </group>
+          <group name="diary" maxOccurs="*">
+            <string name="date" maxOccurs="*" />
+            <string name="user" maxOccurs="*" />
+            <string name="diary_content" maxOccurs="*" />
+          </group>
+        </group>
+      </group>
+    </model>
+    <instance>
+      <field-info>
+        <field>
+          <name>Ticket_ID</name>
+          <id>801400000</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Assigned To Group</name>
+          <id>801300003</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Submitter</name>
+          <id>2</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Classification</name>
+          <id>801300009</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Component</name>
+          <id>801300011</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Priority</name>
+          <id>801300006</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Status</name>
+          <id>801300005</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Creation Date</name>
+          <id>3</id>
+          <type> TIME</type>
+        </field>
+        <field>
+          <name>Modification Date</name>
+          <id>6</id>
+          <type> TIME</type>
+        </field>
+        <field>
+          <name>History_StartDate</name>
+          <id>801300059</id>
+          <type> TIME</type>
+        </field>
+        <field>
+          <name>Comment</name>
+          <id>801300033</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Details</name>
+          <id>801300039</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Short Description</name>
+          <id>801300038</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>LOG Diary</name>
+          <id>801300040</id>
+          <type> DIARY</type>
+        </field>
+        <field>
+          <name>Ticket_Typ</name>
+          <id>801300000</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Att_Attachment1</name>
+          <id>801300049</id>
+          <type> ATTACH</type>
+        </field>
+        <field>
+          <name>Att_Attachment2</name>
+          <id>801300050</id>
+          <type> ATTACH</type>
+        </field>
+        <field>
+          <name>Att_Attachment3</name>
+          <id>801300051</id>
+          <type> ATTACH</type>
+        </field>
+        <field>
+          <name>Att_Attachment4</name>
+          <id>801300052</id>
+          <type> ATTACH</type>
+        </field>
+        <field>
+          <name>Att_Attachment5</name>
+          <id>801300053</id>
+          <type> ATTACH</type>
+        </field>
+        <field>
+          <name>External</name>
+          <id>801300047</id>
+          <type> CHAR</type>
+        </field>
+      </field-info>
+      <entry>
+        <field_value>
+          <value>001234567890</value>
+        </field_value>
+        <field_value>
+          <value>START_PRV_DEVELOPMENT</value>
+        </field_value>
+        <field_value>
+          <value>jszumig</value>
+        </field_value>
+        <field_value>
+          <value>PROBLEM_OTHERS</value>
+        </field_value>
+        <field_value>
+          <value>START_GENERAL</value>
+        </field_value>
+        <field_value>
+          <value>3</value>
+        </field_value>
+        <field_value>
+          <value>Assigned</value>
+        </field_value>
+        <field_value>
+          <value>1456311691</value>
+        </field_value>
+        <field_value>
+          <value>1456323608</value>
+        </field_value>
+        <field_value>
+          <value>1456323607</value>
+        </field_value>
+        <field_value>
+          <value>vfvjjv</value>
+        </field_value>
+        <field_value>
+          <value>Problem: Am 23.02.2016 um 7:06:16 Uhr wurde die jms/in/START.SDBLIWE.01 Queue gestoppt.\nDie SystemOut LogDatei und das Telegramm --&gt; sehe Anhang.\n\ncmd:com.daimler.tbk.p75.supplierplantif.command.P75_StartSDBSupplierImportCmd\nBetroffenes Werk: All</value>
+        </field_value>
+        <field_value>
+          <value>Test Ticket</value>
+        </field_value>
+        <field_value>
+          <value>
+            <diary>
+              <date>1456311691</date>
+              <user>jszumig</user>
+              <diary_contents>Details:\nProblem: Am 23.02.2016 um 7:06:16 Uhr wurde die jms/in/START.SDBLIWE.01 Queue gestoppt.\nDie SystemOut LogDatei und das Telegramm --&gt; sehe Anhang.\n\ncmd:com.daimler.tbk.p75.supplierplantif.command.P75_StartSDBSupplierImportCmd\nBetroffenes Werk: All</diary_contents>
+            </diary>
+            <diary>
+              <date>1456311824</date>
+              <user>jszumig</user>
+              <diary_contents>Abgeleitet aus dem Incident 0032138557</diary_contents>
+            </diary>
+          </value>
+        </field_value>
+        <field_value>
+          <value>Problem</value>
+        </field_value>
+        <field_value>
+          <value>
+            <attach_value>
+              <attach_loc>
+                <loc_type>1</loc_type>
+                <filename>logs_0.zip</filename>
+              </attach_loc>
+            </attach_value>
+          </value>
+        </field_value>
+        <field_value>
+          <value>
+            <attach_value>
+              <attach_loc>
+                <loc_type>1</loc_type>
+                <filename>Telegramm_1.zip</filename>
+              </attach_loc>
+            </attach_value>
+          </value>
+        </field_value>
+        <field_value>
+          <value>
+            <attach_value>
+              <attach_loc>
+                <loc_type>1</loc_type>
+                <filename>SystemErr_2.txt</filename>
+              </attach_loc>
+            </attach_value>
+          </value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+      </entry>
+    </instance>
+  </xform>
+</arsystem_xml_report>

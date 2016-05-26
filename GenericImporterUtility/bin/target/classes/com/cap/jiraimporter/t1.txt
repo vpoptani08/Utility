@@ -1,0 +1,11 @@
+private static String postJIRADataToCreateIssue(String auth, String url, String data) throws AuthenticationException, ClientHandlerException {
+		Client client = Client.create();
+		WebResource webResource = client.resource(url);
+		ClientResponse response = webResource.header("Authorization", "Basic " + auth).type("application/json")
+				.accept("application/json").post(ClientResponse.class, data);
+		int statusCode = response.getStatus();
+		if (statusCode == 401) {
+			throw new AuthenticationException("Invalid Username or Password");
+		}
+		return response.getEntity(String.class);
+	}

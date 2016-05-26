@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<arsystem_xml_report>
+  <xform id="CISM_Bas:Ticket" xmlns="http://www.w3.org/2000/xforms">
+    <model>
+      <group name="field-info" minOccurs="1" maxOccurs="1">
+        <group name="field" minOccurs="1" maxOccurs="*">
+          <string name="name" />
+          <number name="id" long="true" />
+          <string name="type" range="closed">
+            <value>CHAR</value>
+            <value>TIME</value>
+            <value>DECIMAL</value>
+            <value>REAL</value>
+            <value>INT</value>
+            <value>ENUM</value>
+            <value>ATTACH</value>
+            <value>DIARY</value>
+            <value>TIMEOFDAY</value>
+            <value>DATE</value>
+            <value>CURRENCY</value>
+            <value>NULL</value>
+          </string>
+        </group>
+      </group>
+      <group name="entry" minOccurs="1" maxOccurs="*">
+        <group name="field_value" minOccurs="1" maxOccurs="*">
+          <string name="value" maxOccurs="*" />
+          <group name="status_history" maxOccurs="*">
+            <string name="date" maxOccurs="*" />
+            <string name="user" maxOccurs="*" />
+          </group>
+          <group name="currency" maxOccurs="*">
+            <string name="currency_value" maxOccurs="*" />
+            <string name="currency_type" maxOccurs="*" />
+            <string name="currency_date" maxOccurs="*" />
+            <string name="currency_functional" maxOccurs="*" />
+          </group>
+          <group name="diary" maxOccurs="*">
+            <string name="date" maxOccurs="*" />
+            <string name="user" maxOccurs="*" />
+            <string name="diary_content" maxOccurs="*" />
+          </group>
+        </group>
+      </group>
+    </model>
+    <instance>
+      <field-info>
+        <field>
+          <name>Ticket_ID</name>
+          <id>801400000</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Assigned To Group</name>
+          <id>801300003</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Submitter</name>
+          <id>2</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Classification</name>
+          <id>801300009</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Component</name>
+          <id>801300011</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Priority</name>
+          <id>801300006</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Status</name>
+          <id>801300005</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Creation Date</name>
+          <id>3</id>
+          <type> TIME</type>
+        </field>
+        <field>
+          <name>Modification Date</name>
+          <id>6</id>
+          <type> TIME</type>
+        </field>
+        <field>
+          <name>History_StartDate</name>
+          <id>801300059</id>
+          <type> TIME</type>
+        </field>
+        <field>
+          <name>Comment</name>
+          <id>801300033</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Details</name>
+          <id>801300039</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Short Description</name>
+          <id>801300038</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>LOG Diary</name>
+          <id>801300040</id>
+          <type> DIARY</type>
+        </field>
+        <field>
+          <name>Ticket_Typ</name>
+          <id>801300000</id>
+          <type> CHAR</type>
+        </field>
+        <field>
+          <name>Att_Attachment1</name>
+          <id>801300049</id>
+          <type> ATTACH</type>
+        </field>
+        <field>
+          <name>Att_Attachment2</name>
+          <id>801300050</id>
+          <type> ATTACH</type>
+        </field>
+        <field>
+          <name>Att_Attachment3</name>
+          <id>801300051</id>
+          <type> ATTACH</type>
+        </field>
+        <field>
+          <name>Att_Attachment4</name>
+          <id>801300052</id>
+          <type> ATTACH</type>
+        </field>
+        <field>
+          <name>Att_Attachment5</name>
+          <id>801300053</id>
+          <type> ATTACH</type>
+        </field>
+        <field>
+          <name>External</name>
+          <id>801300047</id>
+          <type> CHAR</type>
+        </field>
+      </field-info>
+      <entry>
+        <field_value>
+          <value>1234567890</value>
+        </field_value>
+        <field_value>
+          <value>START_PRV_DEVELOPMENT</value>
+        </field_value>
+        <field_value>
+          <value>mkienzl</value>
+        </field_value>
+        <field_value>
+          <value>PROBLEM_OTHERS</value>
+        </field_value>
+        <field_value>
+          <value>START_APPLICATION_85 PEM-CONTROLLING_30 STAMMDATENPFLEGE</value>
+        </field_value>
+        <field_value>
+          <value>3</value>
+        </field_value>
+        <field_value>
+          <value>Assigned</value>
+        </field_value>
+        <field_value>
+          <value>1456404354</value>
+        </field_value>
+        <field_value>
+          <value>1456404354</value>
+        </field_value>
+        <field_value>
+          <value>1456404354</value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value>Navigationspfad:\nReiter:\nArt des Fehlers: Daten / Funktionalität / Darstellung\nBeschreibung:\nGem SRS Z322ff sollte im Bearbeitungsmodus beim Klick auf „Eingaben zurücksetzen“ folgende Sicherheitsabfrage erscheinen „Wollen Sie die eingegebenen Daten wirklich verwerfen?“. Dies ist nicht der Fall</value>
+        </field_value>
+        <field_value>
+          <value>Test Ticket</value>
+        </field_value>
+        <field_value>
+          <value>
+            <diary>
+              <date>1456404354</date>
+              <user>mkienzl</user>
+              <diary_contents>Testzeitpunkt 25.02.2016\nUserID: Ticketowner\nTestverhindernd? Nein, wenn ja: Welche Folgeprozesse können nicht getestet werden?\nFehler bereits in Vorgänger-Release existent? ja / nein\nTestfall: Siehe Dokument xx, Tescase ID xx\n\nDetails:\nNavigationspfad:\nReiter:\nArt des Fehlers: Daten / Funktionalität / Darstellung\nBeschreibung:\nGem SRS Z322ff sollte im Bearbeitungsmodus beim Klick auf „Eingaben zurücksetzen“ folgende Sicherheitsabfrage erscheinen „Wollen Sie die eingegebenen Daten wirklich verwerfen?“. Dies ist nicht der Fall</diary_contents>
+            </diary>
+          </value>
+        </field_value>
+        <field_value>
+          <value>Problem</value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value>v16.1.05.12</value>
+        </field_value>
+      </entry>
+      <entry>
+        <field_value>
+          <value>0032178676</value>
+        </field_value>
+        <field_value>
+          <value>START_PRV_DEVELOPMENT</value>
+        </field_value>
+        <field_value>
+          <value>mkienzl</value>
+        </field_value>
+        <field_value>
+          <value>PROBLEM_OTHERS</value>
+        </field_value>
+        <field_value>
+          <value>START_APPLICATION_85 PEM-CONTROLLING_30 STAMMDATENPFLEGE</value>
+        </field_value>
+        <field_value>
+          <value>3</value>
+        </field_value>
+        <field_value>
+          <value>Assigned</value>
+        </field_value>
+        <field_value>
+          <value>1456403618</value>
+        </field_value>
+        <field_value>
+          <value>1456403618</value>
+        </field_value>
+        <field_value>
+          <value>1456403618</value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value>Navigationspfad: PEM Controlling - Stammdatenpflege ÄM - ÄH Gültigkeiten\nReiter:\nArt des Fehlers: Daten / / Darstellung\nBeschreibung:\nBRC000 ist m.E. keine gültige Baureihe. In der Teilestammliste z.B. ist diese nicht zu finden, allerdings ist dort die erste Position im Drop-Down &quot;leer&quot;.\nSiehe Screenshot im Anhang</value>
+        </field_value>
+        <field_value>
+          <value>[ALL] [I] [start] - INT - SRS618 &lt;&lt;ÄH GI pflegen im Dropdown wird BR C000 angezeigt&gt;&gt;</value>
+        </field_value>
+        <field_value>
+          <value>
+            <diary>
+              <date>1456403618</date>
+              <user>mkienzl</user>
+              <diary_contents>Testzeitpunkt &#40;Datum und Uhrzeit&#41;: 25.02.2016 UserID: Ticketowner\nTestverhindernd? Nein, wenn ja: Welche Folgeprozesse können nicht getestet werden?\nFehler bereits in Vorgänger-Release existent? ja / nein\nTestfall: Siehe Dokument xx, Tescase ID xx\n\nDetails:\nNavigationspfad: PEM Controlling - Stammdatenpflege ÄM - ÄH Gültigkeiten\nReiter:\nArt des Fehlers: Daten / / Darstellung\nBeschreibung:\nBRC000 ist m.E. keine gültige Baureihe. In der Teilestammliste z.B. ist diese nicht zu finden, allerdings ist dort die erste Position im Drop-Down &quot;leer&quot;.\nSiehe Screenshot im Anhang</diary_contents>
+            </diary>
+          </value>
+        </field_value>
+        <field_value>
+          <value>Problem</value>
+        </field_value>
+        <field_value>
+          <value>
+            <attach_value>
+              <attach_loc>
+                <loc_type>1</loc_type>
+                <filename>20160225_PROGSRS618_BR_C000_Im&#43;Dropdown&#43;angezeigt_0.pptx</filename>
+              </attach_loc>
+            </attach_value>
+          </value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value>v16.1.05.12</value>
+        </field_value>
+      </entry>
+      <entry>
+        <field_value>
+          <value>0032176463</value>
+        </field_value>
+        <field_value>
+          <value>START_PRV_DEVELOPMENT</value>
+        </field_value>
+        <field_value>
+          <value>mkienzl</value>
+        </field_value>
+        <field_value>
+          <value>PROBLEM_OTHERS</value>
+        </field_value>
+        <field_value>
+          <value>START_APPLICATION_85 PEM-CONTROLLING_10 PEM</value>
+        </field_value>
+        <field_value>
+          <value>3</value>
+        </field_value>
+        <field_value>
+          <value>Assigned</value>
+        </field_value>
+        <field_value>
+          <value>1456397083</value>
+        </field_value>
+        <field_value>
+          <value>1456397083</value>
+        </field_value>
+        <field_value>
+          <value>1456397083</value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value>Navigationspfad: …\nArt des Fehlers: Daten / Funktionalität / Darstellung\nBeschreibung:\n1. Wie ist der realisierte Stand &#40;Istzustand&#41;?\nBei Auswahl Attribut Datum Einkaufsabschluss, sind in PEM-Liste nur zwei Operatoren auswählbar\nAuf INT tritt gleiches Verhalten auf\nIm Vergleich dazu sind in der Teilestammliste sämtliche Operatoren verfügbar.\nDer Workaround führt zu einer exception\n&#40;Siehe Anhang&#41;\n\n2. Was habe ich erwartet &#40;Sollzustand&#41;?</value>
+        </field_value>
+        <field_value>
+          <value>[ALL] [P] [start] - PRD - &lt;&lt;PEM Liste: Operatoren Datum EK-Abschluss unvollständig&gt;&gt;</value>
+        </field_value>
+        <field_value>
+          <value>
+            <diary>
+              <date>1456397083</date>
+              <user>mkienzl</user>
+              <diary_contents>Ausführungszeitpunkt &#40;Datum und Uhrzeit&#41;: …\r\nKönnten SST-Läufe / Batches Ursache für den Fehler sein? …\r\nUserID: …\r\nVerwendete Daten: …\n\nDetails:\nNavigationspfad: …\nArt des Fehlers: Daten / Funktionalität / Darstellung\nBeschreibung:\n1. Wie ist der realisierte Stand &#40;Istzustand&#41;?\nBei Auswahl Attribut Datum Einkaufsabschluss, sind in PEM-Liste nur zwei Operatoren auswählbar\nAuf INT tritt gleiches Verhalten auf\nIm Vergleich dazu sind in der Teilestammliste sämtliche Operatoren verfügbar.\nDer Workaround führt zu einer exception\n&#40;Siehe Anhang&#41;\n\n2. Was habe ich erwartet &#40;Sollzustand&#41;?</diary_contents>
+            </diary>
+          </value>
+        </field_value>
+        <field_value>
+          <value>Problem</value>
+        </field_value>
+        <field_value>
+          <value>
+            <attach_value>
+              <attach_loc>
+                <loc_type>1</loc_type>
+                <filename>20160225_PEM_Liste_operatoren_Datum_EK_Abschluss_unvollstaendig_1.pptx</filename>
+              </attach_loc>
+            </attach_value>
+          </value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value>Rel. v15.3.11.06</value>
+        </field_value>
+      </entry>
+      <entry>
+        <field_value>
+          <value>0032175638</value>
+        </field_value>
+        <field_value>
+          <value>START_PRV_DEVELOPMENT</value>
+        </field_value>
+        <field_value>
+          <value>mkienzl</value>
+        </field_value>
+        <field_value>
+          <value>PROBLEM_OTHERS</value>
+        </field_value>
+        <field_value>
+          <value>START_APPLICATION_60 LFT-KOMMUNIKATION_20 AENDERUNG</value>
+        </field_value>
+        <field_value>
+          <value>3</value>
+        </field_value>
+        <field_value>
+          <value>Assigned</value>
+        </field_value>
+        <field_value>
+          <value>1456395126</value>
+        </field_value>
+        <field_value>
+          <value>1456395185</value>
+        </field_value>
+        <field_value>
+          <value>1456395184</value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value>Navigationspfad:\nReiter:\nArt des Fehlers: Daten / Funktionalität / Darstellung\nBeschreibung:\nBeim BS-Wechsel führt die Auswahl von BS3CPL und BS3 führen zu SQL Exception &#40;dabei wird vorherige Liste angezeigt&#41;. Siehe Anhang</value>
+        </field_value>
+        <field_value>
+          <value>[ALL] [I] [start] - INT - Regression/SRSxxx &lt;&lt;LK AEM - SQL Exception in TABs Liste&gt;&gt;</value>
+        </field_value>
+        <field_value>
+          <value>
+            <diary>
+              <date>1456395126</date>
+              <user>mkienzl</user>
+              <diary_contents>Testzeitpunkt &#40;Datum und Uhrzeit&#41;: 25.02.2016, 11:00\nUserID: Ticketowner\nTestverhindernd? Nein, wenn ja: Welche Folgeprozesse können nicht getestet werden?\nFehler bereits in Vorgänger-Release existent?  nein\nTestfall: Siehe Dokument xx, Tescase ID xx\n\nDetails:\nNavigationspfad:\nReiter:\nArt des Fehlers: Daten / Funktionalität / Darstellung\nBeschreibung:\nBeim BS-Wechsel führt die Auswahl von BS3CPL und BS3 führen zu SQL Exception &#40;dabei wird vorherige Liste angezeigt&#41;. Siehe Anhang</diary_contents>
+            </diary>
+          </value>
+        </field_value>
+        <field_value>
+          <value>Problem</value>
+        </field_value>
+        <field_value>
+          <value>
+            <attach_value>
+              <attach_loc>
+                <loc_type>1</loc_type>
+                <filename>20160225_LK_AEM_TABs-Liste_SQLException_2.pptx</filename>
+              </attach_loc>
+            </attach_value>
+          </value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value>v16.1.05.12</value>
+        </field_value>
+      </entry>
+      <entry>
+        <field_value>
+          <value>0032173239</value>
+        </field_value>
+        <field_value>
+          <value>START_PRV_DEVELOPMENT</value>
+        </field_value>
+        <field_value>
+          <value>jszumig</value>
+        </field_value>
+        <field_value>
+          <value>PROBLEM_OTHERS</value>
+        </field_value>
+        <field_value>
+          <value>START_GENERAL</value>
+        </field_value>
+        <field_value>
+          <value>3</value>
+        </field_value>
+        <field_value>
+          <value>Assigned</value>
+        </field_value>
+        <field_value>
+          <value>1456389790</value>
+        </field_value>
+        <field_value>
+          <value>1456390094</value>
+        </field_value>
+        <field_value>
+          <value>1456390093</value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value>Problem: Am 22.02.2016 um 14:38:40 Uhr wurde die jms/in/START.CNC067.01 Queue gestoppt.\n\nDie SystemOut LogDatei und das Telegramm --&gt; sehe Anhang.\n\nCmd: com.dcx.amsupply.start.p56.pemdata.api.commands.P56_RecalculateChangeNoticeCmd\nBetroffenes Werk: All</value>
+        </field_value>
+        <field_value>
+          <value>Incident Ticket[ALL] [I] [start] &lt;&lt;Die Queue jms/in/START.CNC067.01 wurde gestoppt&gt;&gt;</value>
+        </field_value>
+        <field_value>
+          <value>
+            <diary>
+              <date>1456389790</date>
+              <user>jszumig</user>
+              <diary_contents>Details:\nProblem: Am 22.02.2016 um 14:38:40 Uhr wurde die jms/in/START.CNC067.01 Queue gestoppt.\n\nDie SystemOut LogDatei und das Telegramm --&gt; sehe Anhang.\n\nCmd: com.dcx.amsupply.start.p56.pemdata.api.commands.P56_RecalculateChangeNoticeCmd\nBetroffenes Werk: All</diary_contents>
+            </diary>
+            <diary>
+              <date>1456390047</date>
+              <user>jszumig</user>
+              <diary_contents>Abgeleitet aus dem Incident 0032143654.</diary_contents>
+            </diary>
+          </value>
+        </field_value>
+        <field_value>
+          <value>Problem</value>
+        </field_value>
+        <field_value>
+          <value>
+            <attach_value>
+              <attach_loc>
+                <loc_type>1</loc_type>
+                <filename>SysOut2_3.txt</filename>
+              </attach_loc>
+            </attach_value>
+          </value>
+        </field_value>
+        <field_value>
+          <value>
+            <attach_value>
+              <attach_loc>
+                <loc_type>1</loc_type>
+                <filename>Telegram2_4.txt</filename>
+              </attach_loc>
+            </attach_value>
+          </value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+        <field_value>
+          <value></value>
+        </field_value>
+      </entry>
+    </instance>
+  </xform>
+</arsystem_xml_report>

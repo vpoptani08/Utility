@@ -1,0 +1,53 @@
+Ticket_ID=001234567890=
+Assigned To Group=START_PRV_DEVELOPMENT=
+Submitter=jszumig=
+Classification=PROBLEM_OTHERS=
+Component=START_GENERAL=
+Priority=3=
+Status=Assigned=
+Creation Date=1456311691=
+Modification Date=1456323608=
+History_StartDate=1456323607=
+Comment=vfvjjv=
+Details=Problem: Am 23.02.2016 um 7:06:16 Uhr wurde die jms/in/START.SDBLIWE.01 Queue gestoppt.\nDie SystemOut LogDatei und das Telegramm --> sehe Anhang.\n\ncmd:com.daimler.tbk.p75.supplierplantif.command.P75_StartSDBSupplierImportCmd\nBetroffenes Werk: All=
+Short Description=Test Ticket=
+LOG Diary=
+            
+              1456311691
+              jszumig
+              Details:\nProblem: Am 23.02.2016 um 7:06:16 Uhr wurde die jms/in/START.SDBLIWE.01 Queue gestoppt.\nDie SystemOut LogDatei und das Telegramm --> sehe Anhang.\n\ncmd:com.daimler.tbk.p75.supplierplantif.command.P75_StartSDBSupplierImportCmd\nBetroffenes Werk: All
+            
+            
+              1456311824
+              jszumig
+              Abgeleitet aus dem Incident 0032138557
+            
+          =
+Ticket_Typ=Problem=
+Att_Attachment1=
+            
+              
+                1
+                logs_0.zip
+              
+            
+          =
+Att_Attachment2=
+            
+              
+                1
+                Telegramm_1.zip
+              
+            
+          =
+Att_Attachment3=
+            
+              
+                1
+                SystemErr_2.txt
+              
+            
+          =
+Att_Attachment4==
+Att_Attachment5==
+External==

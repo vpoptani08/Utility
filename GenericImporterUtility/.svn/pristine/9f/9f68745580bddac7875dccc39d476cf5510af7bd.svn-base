@@ -1,0 +1,53 @@
+
+# Location of CSV file
+csvFile=cismExport.csv
+
+# ================================
+# Location of Attachments
+attachmentDir=attachments\\
+
+#file to attach
+attachmentFileName=cism_attachment.zip
+
+#archive folder
+archName=archive\\
+
+# ================================
+#userID
+USER=akhemani
+
+#password
+PASSWORD=Amyk@2309
+
+
+#project Key
+projectId=START
+
+
+
+# Type of issue
+
+issueType = Bug
+
+#Logfile
+
+logFile=utility.log
+
+#JIRA BASE_URL
+BASE_URL = https://seu.sdm.de/pu/daimler/build/jira
+
+
+#Summary comment
+summaryComment=Fill the english summary here
+
+#If "comment" field is null in the .csv
+nullComment=No comment from CISM import
+
+#set priority   CISM_priority=JIRA_priority
+1=13001
+2=13000
+3=13002
+4=13004 
+5=13003
+
+
